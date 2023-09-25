@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  @font-face {
+    font-family: 'Shabnam';
+    src: url('https://sahand.storage.iran.liara.space/font/Shabnam.woff');
+    src: url('https://sahand.storage.iran.liara.space/font/Shabnam.woff') format('embedded-opentype'),
+       url('https://sahand.storage.iran.liara.space/font/Shabnam.woff') format('woff2'),
+       url('https://sahand.storage.iran.liara.space/font/Shabnam.woff') format('woff'),
+       url('https://sahand.storage.iran.liara.space/font/Shabnam.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+font-family: "Shabnam";
+  background: #f7f6ff;
+}
+
+h2 {
+  margin: 16px;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 32px;
+}
+
+.select-box {
+  position: relative;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background: #2f3640;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  font-family: "Shabnam";
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  font-family: "Shabnam";
+  background: url("img/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+  margin-top: 54px;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+    font-family: "Shabnam";
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: lightgreen;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+  font-family: "Shabnam";
+}
+
+.select-box .option:hover {
+  background: lightblue;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+color: white;
+}
+
+
+/* Searchbox */
+
+.search-box input {
+  width: 100%;
+  padding: 12px 16px;
+  font-family: "Shabnam";
+  font-size: 16px;
+  position: absolute;
+  border-radius: 8px 8px 0 0;
+  z-index: 100;
+  border: 8px solid #2f3640;
+  font-family: "Shabnam";
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.search-box input:focus {
+  outline: none;
+  font-family: "Shabnam";
+}
+
+.select-box .options-container.active ~ .search-box input {
+  opacity: 1;
+  pointer-events: auto;
+    font-family: "Shabnam";
+}
