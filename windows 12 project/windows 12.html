@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+    <script src="js/1.js"></script>
+  <title>windows 12</title>
+<link rel="stylesheet" href="css/1.css">
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+
+<style>
+body{
+  background-image: url("img/3451499.jpg");
+}
+</style>
+</head>
+
+<body translate="no">
+  <input data-start="" id="start" type="checkbox" hidden="">
+<input checked="checked" data-global-option="" id="global-option-always-on-top" type="checkbox" hidden="">
+<input data-global-option="" id="global-option-auto-hide" type="checkbox" hidden="">
+<input data-global-option="" id="global-option-show-small-icons" type="checkbox" hidden="">
+<input checked="checked" data-global-option="" id="global-option-show-clock" type="checkbox" hidden="">
+<input checked="checked" class="no-tab" data-name="welcome" data-window-trigger="" id="welcome" type="checkbox" hidden="">
+<input class="no-tab" data-name="taskbar" data-window-trigger="" id="taskbar" type="checkbox" hidden="">
+<input data-name="printers" data-window-trigger="" id="printers" type="checkbox" hidden="">
+<input data-minimize="" data-name="printers" id="printers-minimize" type="checkbox" hidden="">
+<input data-maximize="" data-name="printers" id="printers-maximize" type="checkbox" hidden="">
+<input data-name="control-panel" data-window-trigger="" id="control-panel" type="checkbox" hidden="">
+<input data-minimize="" data-name="control-panel" id="control-panel-minimize" type="checkbox" hidden="">
+<input data-maximize="" data-name="control-panel" id="control-panel-maximize" type="checkbox" hidden="">
+<input data-name="computer" data-window-trigger="" id="computer" type="checkbox" class="" checked="checked" hidden="">
+<input data-minimize="" data-name="computer" id="computer-minimize" type="checkbox" hidden="">
+<input data-maximize="" data-name="computer" id="computer-maximize" type="checkbox" hidden="">
+<input data-name="notepad" data-window-trigger="" id="notepad" type="checkbox" checked="checked" class="active" hidden="">
+<input data-minimize="" data-name="notepad" id="notepad-minimize" type="checkbox" hidden="">
+<input data-maximize="" data-name="notepad" id="notepad-maximize" type="checkbox" hidden="">
+<input data-name="explorer" data-window-trigger="" id="explorer" type="checkbox" hidden="">
+<input data-minimize="" data-name="explorer" id="explorer-minimize" type="checkbox" hidden="">
+<input data-maximize="" data-name="explorer" id="explorer-maximize" type="checkbox" hidden="">
+<input id="explorer-desktop" name="explorer" type="radio" hidden="">
+<input id="explorer-computer" name="explorer" type="radio" hidden="">
+<input checked="checked" id="explorer-disk" name="explorer" type="radio" hidden="">
+<input id="explorer-dos" name="explorer" type="radio" hidden="">
+<input id="explorer-program-files" name="explorer" type="radio" hidden="">
+<input id="explorer-windows" name="explorer" type="radio" hidden="">
+<input id="explorer-control-panel" name="explorer" type="radio" hidden="">
+<input id="explorer-printers" name="explorer" type="radio" hidden="">
+<input id="explorer-recycle-bin" name="explorer" type="radio" hidden="">
+<input checked="checked" id="toggle-computer" type="checkbox" hidden="">
+<input checked="checked" id="toggle-disk" type="checkbox" hidden="">
+<input id="toggle-program-files" type="checkbox" hidden="">
+<input id="toggle-windows" type="checkbox" hidden="">
+<input data-error-trigger="" data-name="diskette-a" id="error-diskette-a" type="checkbox" hidden="">
+<input data-error-trigger="" data-name="diskette-b" id="error-diskette-b" type="checkbox" hidden="">
+<input data-error-trigger="" data-name="blue-screen" id="error-blue-screen" type="checkbox" hidden="">
+<main>
+  <div id="desktop">
+    <div id="icons">
+      <label class="desktop-icon label-computer" for="computer" tabindex="0">
+        <span>رایانه من</span>
+      </label>
+      <label class="desktop-icon label-inbox">
+        <span>Inbox</span>
+      </label>
+      <label class="desktop-icon label-recycle-bin">
+        <span>Recycle Bin</span>
+      </label>
+    </div>
+    <div id="windows">
+      <div class="window" data-window="" id="window-welcome">
+        <div class="window-inside">
+          <nav class="window-nav">
+            <h3>
+              <span>Welcome</span>
+            </h3>
+            <div class="buttons">
+              <label class="close" for="welcome" tabindex="0"></label>
+            </div>
+          </nav>
+          <div class="window-content">
+            <div class="information-container">
+              <div class="information">
+                <h3>About this project</h3>
+                <p>This ongoing web experiment by <a href="https://gabriellew.ee/" target="_blank">Gabrielle Wee</a>
+ is an attempt to get as close as possible to Windows&nbsp;95 using
+primarily CSS and HTML, with a little bit of Javascript magic.</p>
+                <h3>Changelog</h3>
+                <ul>
+                  <li>September 19, 2023 - Launch first version!</li>
+                  <li>March 10, 2023 - Begin experiment.</li>
+                </ul>
+                <h3>Caveats</h3>
+                <ul>
+                  <li>The code is pretty convoluted and difficult to follow. It‘s not really meant to be an example of best practices!</li>
+                  <li>On that note, this demo works best in a desktop view. It may work on mobile devices but not all windows will function properly.</li>
+                  <li>Items that are not selectable are not functional (yet).</li>
+                  <li>There‘s some weird sizing issues that mean that this demo is not 1:1 with actual Windows&nbsp;95 and that‘s ok!</li>
+                  <li>This demo may not be accessible or easy to navigate using the keyboard.</li>
+                  <li>Most of the components work without Javascript, but everything works better with Javascript.</li>
+                  <li>There are a few bugs that I haven‘t ironed out yet. If you notice one, I‘m probably in the process of fixing it!</li>
+                </ul>
+                <h3>To-do</h3>
+                <ul>
+                  <li>Iron out bugs. Always.</li>
+                  <li>Add documents to the Documents menu</li>
+                  <li>Add Inbox and Recycle Bin windows</li>
+                  <li>Add Find and Run options from Start menu</li>
+                  <li>Enable buttons in Taskbar window on the Start Menu Programs tab</li>
+                  <li>Enable tooltips in Taskbar window</li>
+                  <li>Enabled status bar tips</li>
+                  <li>Get window resizing working on most windows</li>
+                  <li>Add window stacking when new windows are opened</li>
+                  <li>Add shut down sequence</li>
+                </ul>
+                <h3>Credits</h3>
+                <ul>
+                  <li><a href="https://www.pcjs.org/software/pcx86/sys/windows/win95/4.00.950/" target="_blank">Windows 95 emulator</a></li>
+                  <li><a href="https://codepen.io/louh/pen/oZJQvm" target="_blank">Windows&nbsp;95 scrollbars</a></li>
+                  <li>Icons are modified from the original Windows&nbsp;95 icons</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="window-footer">
+            <label class="button" for="welcome" tabindex="0">
+              <span>Close</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="window" data-window="" id="window-taskbar">
+        <input checked="checked" id="taskbar-options" name="taskbar" type="radio" hidden="">
+        <input id="start-menu-programs" name="taskbar" type="radio" hidden="">
+        <input checked="checked" data-option="" id="option-always-on-top" type="checkbox" hidden="">
+        <input data-option="" id="option-auto-hide" type="checkbox" hidden="">
+        <input data-option="" id="option-show-small-icons" type="checkbox" hidden="">
+        <input checked="checked" data-option="" id="option-show-clock" type="checkbox" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav">
+            <h3>
+              <span>Taskbar Properties</span>
+            </h3>
+            <div class="buttons">
+              <label class="question" disabled="" tabindex="0"></label>
+              <label class="close" for="taskbar" tabindex="0"></label>
+            </div>
+          </nav>
+          <div class="window-content">
+            <div class="tab-container">
+              <div class="tab-group">
+                <label class="tab tab-taskbar-options" for="taskbar-options">
+                  <span>Taskbar Options</span>
+                </label>
+                <label class="tab tab-start-menu-programs" for="start-menu-programs">
+                  <span>Start Menu Programs</span>
+                </label>
+              </div>
+              <div class="tabpanel-group">
+                <div class="tabpanel taskbar-options">
+                  <div class="preview-container">
+                    <div class="preview">
+                      <div class="window">
+                        <div class="window-inside">
+                          <div class="window-content">
+                            <div class="list-container">
+                              <menu class="list">
+                                <li>
+                                  <label class="label-volume">Sound Re</label>
+                                </li>
+                                <li>
+                                  <label class="label-wordpad">Wordpad</label>
+                                </li>
+                              </menu>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="start-menu-outline"></div>
+                      <nav class="start-menu">
+                        <label class="label-start">Start</label>
+                        <div class="menu-container">
+                          <menu class="menu main-menu underline">
+                            <li>
+                              <a class="label-settings label-nested">
+                                <span>Settings</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="label-find label-nested">
+                                <span>Find</span>
+                              </a>
+                            </li>
+                            <li>
+                              <label class="label-help">
+                                <span>Help</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="label-run">
+                                <span>Run...</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="label-shut-down">
+                                <span><span>Sh</span><span class="line">u</span><span>t Down</span></span>
+                              </label>
+                            </li>
+                          </menu>
+                        </div>
+                        <div class="time label-printer-small">
+                          <time>12:45 بعداز ظهر</time>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <menu class="options underline">
+                    <li>
+                      <label for="option-always-on-top" tabindex="0">
+                        <span>
+                          <span>Always on</span>
+                          <span class="line">top</span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="option-auto-hide" tabindex="0">
+                        <span><span>A</span><span class="line">u</span><span>to hide</span></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="option-show-small-icons" tabindex="0">
+                        <span>
+                          <span>Show</span>
+                          <span class="line">small</span>
+                          <span>icons in Start menu</span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="option-show-clock" tabindex="0">
+                        <span>
+                          <span>Show</span>
+                          <span class="line">Clock</span>
+                        </span>
+                      </label>
+                    </li>
+                  </menu>
+                </div>
+                <div class="tabpanel start-menu-programs">
+                  <form>
+                    <fieldset class="customize-start-menu">
+                      <legend>Customize Start Menu</legend>
+                      <p class="label-customize-start-menu">You may customize your Start Menu by adding or removing items from it.</p>
+                      <menu class="menu-options underline">
+                        <li>
+                          <label class="button" disabled="" tabindex="0">
+                            <span>Add…</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="button" disabled="" tabindex="0">
+                            <span>Remove…</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="button" disabled="" tabindex="0">
+                            <span><span>A</span><span class="line">dvanced…</span></span>
+                          </label>
+                        </li>
+                      </menu>
+                    </fieldset>
+                    <fieldset class="documents-menu">
+                      <legend>Documents Menu</legend>
+                      <p class="label-recycle-bin-folder">Click the clear button to remove the contents of the Documents Menu.</p>
+                      <menu class="menu-options underline">
+                        <li>
+                          <label class="button" disabled="" for="clear-documents" tabindex="0">
+                            <span>Clear</span>
+                          </label>
+                        </li>
+                      </menu>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="window-footer">
+            <label class="button" data-apply="" data-close="" for="taskbar" tabindex="0">
+              <span>OK</span>
+            </label>
+            <label class="button" for="taskbar" tabindex="0">
+              <span>Cancel</span>
+            </label>
+            <label class="button underline" data-apply="" disabled="">
+              <span>Apply</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="window" data-window="" id="window-printers">
+        <input class="toggle-menu" data-menu="" id="printers-menu" type="checkbox" hidden="">
+        <input checked="checked" class="menu-status-bar" id="printers-menu-status-bar" type="checkbox" hidden="">
+        <input checked="checked" class="menu-large-icons" id="printers-menu-large-icons" name="printers-icon-size" type="radio" hidden="">
+        <input class="menu-small-icons" id="printers-menu-small-icons" name="printers-icon-size" type="radio" hidden="">
+        <input class="menu-list-icons" id="printers-menu-list-icons" name="printers-icon-size" type="radio" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav">
+            <h3 class="label-folder-printers-small">
+              <span>Printers</span>
+            </h3>
+            <div class="buttons">
+              <label class="minimize" for="printers-minimize" tabindex="0"></label>
+              <label class="maximize" for="printers-maximize" tabindex="0"></label>
+              <label class="close" for="printers" tabindex="0"></label>
+            </div>
+          </nav>
+          <menu class="window-menu underline">
+            <label class="toggle-menu-label" data-toggle="" for="printers-menu"></label>
+            <li>
+              <a class="menu-item-file" data-label="" href="#">File</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Create&nbsp;</span><span class="line">Shortcut</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Delete</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Rena</span><span class="line">me</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Properties</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label for="printers" tabindex="0">Close</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-edit" data-label="" href="#">Edit</a>
+              <menu class="sub-menu underline">
+                <li><label class="label-disabled">Undo</label></li><li><hr></li><li><label class="label-disabled"><span><span>Cu</span><span class="line">t</span></span></label></li><li><label class="label-disabled">Copy</label></li><li><label class="label-disabled">Paste</label></li>
+                <li><label class="label-disabled"><span><span>Paste&nbsp;</span><span class="line">Shortcut</span></span></label></li><li><hr></li><li><label class="label-disabled"><span><span>Select&nbsp;</span><span class="line">All</span></span></label></li><li><label class="label-disabled">Invert Selection</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-view" data-label="" href="#">View</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Toolbar</label>
+                </li>
+                <li>
+                  <label class="label-check label-status-bar" for="printers-menu-status-bar">
+                    <span><span>Status&nbsp;</span><span class="line">Bar</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-large-icons" for="printers-menu-large-icons">
+                    <span><span>Lar</span><span class="line">ge Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-small-icons" for="printers-menu-small-icons">
+                    <span><span>S</span><span class="line">mall Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-list-icons" for="printers-menu-list-icons">
+                    <span class="line">List</span>
+                  </label>
+                </li>
+                <li><a class="label-nested"><span><span>Arrange&nbsp;</span><span class="line">Icons</span></span></a><menu class="sub-menu underline"><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Name</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Type</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;Si</span><span class="line">ze</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Date</span></span></label></li><li><hr></li><li><label class="label-disabled">Auto Arrange</label></li></menu></li><li><label class="label-disabled"><span><span>Lin</span><span class="line">e up Icons</span></span></label></li><li><hr></li><li><label class="label-disabled">Refresh</label></li><li><label class="label-disabled">Options...</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-help" data-label="" href="#">Help</a>
+              <menu class="sub-menu underline"><li><label class="label-disabled">Help Topics</label></li><li><hr></li><li><label class="label-disabled">About Windows 95</label></li></menu>
+            </li>
+          </menu>
+          <div class="window-content">
+            <div class="list-container above-footer">
+              <menu class="list">
+                <li>
+                  <label class="label-document-printer-small">Add Printer</label>
+                </li>
+              </menu>
+            </div>
+            <footer class="window-footer">
+              <ul class="number">
+                <li class="show">1 object(s)</li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="window" data-window="" id="window-control-panel">
+        <input class="toggle-menu" data-menu="" id="control-panel-menu" type="checkbox" hidden="">
+        <input checked="checked" class="menu-status-bar" id="control-panel-menu-status-bar" type="checkbox" hidden="">
+        <input checked="checked" class="menu-large-icons" id="control-panel-menu-large-icons" name="control-panel-icon-size" type="radio" hidden="">
+        <input class="menu-small-icons" id="control-panel-menu-small-icons" name="control-panel-icon-size" type="radio" hidden="">
+        <input class="menu-list-icons" id="control-panel-menu-list-icons" name="control-panel-icon-size" type="radio" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav">
+            <h3 class="label-control-panel-small">
+              <span>Control Panel</span>
+            </h3>
+            <div class="buttons">
+              <label class="minimize" for="control-panel-minimize" tabindex="0"></label>
+              <label class="maximize" for="control-panel-maximize" tabindex="0"></label>
+              <label class="close" for="control-panel" tabindex="0"></label>
+            </div>
+          </nav>
+          <menu class="window-menu underline">
+            <label class="toggle-menu-label" data-toggle="" for="control-panel-menu"></label>
+            <li>
+              <a class="menu-item-file" data-label="" href="#">File</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Create&nbsp;</span><span class="line">Shortcut</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Delete</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Rena</span><span class="line">me</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Properties</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label for="control-panel" tabindex="0">Close</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-edit" data-label="" href="#">Edit</a>
+              <menu class="sub-menu underline">
+                <li><label class="label-disabled">Undo</label></li><li><hr></li><li><label class="label-disabled"><span><span>Cu</span><span class="line">t</span></span></label></li><li><label class="label-disabled">Copy</label></li><li><label class="label-disabled">Paste</label></li>
+                <li><label class="label-disabled"><span><span>Paste&nbsp;</span><span class="line">Shortcut</span></span></label></li><li><hr></li><li><label class="label-disabled"><span><span>Select&nbsp;</span><span class="line">All</span></span></label></li><li><label class="label-disabled">Invert Selection</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-view" data-label="" href="#">View</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Toolbar</label>
+                </li>
+                <li>
+                  <label class="label-check label-status-bar" for="control-panel-menu-status-bar">
+                    <span><span>Status&nbsp;</span><span class="line">Bar</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-large-icons" for="control-panel-menu-large-icons">
+                    <span><span>Lar</span><span class="line">ge Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-small-icons" for="control-panel-menu-small-icons">
+                    <span><span>S</span><span class="line">mall Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-list-icons" for="control-panel-menu-list-icons">
+                    <span class="line">List</span>
+                  </label>
+                </li>
+                <li><a class="label-nested"><span><span>Arrange&nbsp;</span><span class="line">Icons</span></span></a><menu class="sub-menu underline"><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Name</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Type</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;Si</span><span class="line">ze</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Date</span></span></label></li><li><hr></li><li><label class="label-disabled">Auto Arrange</label></li></menu></li><li><label class="label-disabled"><span><span>Lin</span><span class="line">e up Icons</span></span></label></li><li><hr></li><li><label class="label-disabled">Refresh</label></li><li><label class="label-disabled">Options...</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-help" data-label="" href="#">Help</a>
+              <menu class="sub-menu underline"><li><label class="label-disabled">Help Topics</label></li><li><hr></li><li><label class="label-disabled">About Windows 95</label></li></menu>
+            </li>
+          </menu>
+          <div class="window-content">
+            <div class="list-container above-footer">
+              <menu class="list">
+                <li>
+                  <label class="label-hardware-small">Add New Hardware</label>
+                </li>
+                <li>
+                  <label class="label-add-programs-small">Add/Remove Programs</label>
+                </li>
+                <li>
+                  <label class="label-date-time-small">Date/Time</label>
+                </li>
+                <li>
+                  <label class="label-computer-display-small">Display</label>
+                </li>
+                <li>
+                  <label class="label-folder-fonts-link-small">Fonts</label>
+                </li>
+                <li>
+                  <label class="label-internet-small">Internet</label>
+                </li>
+                <li>
+                  <label class="label-joystick-small">Joystick</label>
+                </li>
+                <li>
+                  <label class="label-keyboard-small">Keyboard</label>
+                </li>
+                <li>
+                  <label class="label-inbox-small">Mail</label>
+                </li>
+                <li>
+                  <label class="label-modems-small">Modems</label>
+                </li>
+                <li>
+                  <label class="label-mouse-small">Mouse</label>
+                </li>
+                <li>
+                  <label class="label-multimedia-small">Multimedia</label>
+                </li>
+                <li>
+                  <label class="label-network-small">Network</label>
+                </li>
+                <li>
+                  <label class="label-passwords-small">Passwords</label>
+                </li>
+                <li>
+                  <label class="label-battery-small">Power</label>
+                </li>
+                <li>
+                  <label class="label-folder-printers-link-small">Printers</label>
+                </li>
+                <li>
+                  <label class="label-regional-small">Regional Settings</label>
+                </li>
+                <li>
+                  <label class="label-computer-sounds-small">Sounds</label>
+                </li>
+                <li>
+                  <label class="label-computer-mouse-small">System</label>
+                </li>
+              </menu>
+            </div>
+            <footer class="window-footer">
+              <ul class="number">
+                <li class="show">19 object(s)</li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="window window-default" data-window="" id="window-computer" style="z-index: 13;" data-index="13">
+        <input class="toggle-menu" data-menu="" id="computer-menu" type="checkbox" hidden="">
+        <input checked="checked" class="menu-status-bar" id="computer-menu-status-bar" type="checkbox" hidden="">
+        <input checked="checked" class="menu-large-icons" id="computer-menu-large-icons" name="computer-icon-size" type="radio" hidden="">
+        <input class="menu-small-icons" id="computer-menu-small-icons" name="computer-icon-size" type="radio" hidden="">
+        <input class="menu-list-icons" id="computer-menu-list-icons" name="computer-icon-size" type="radio" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav" style="touch-action: none;">
+            <h3 class="label-disk-small">
+              <span>Ms-dos_5 (C:)</span>
+            </h3>
+            <div class="buttons">
+              <label class="minimize" for="computer-minimize" tabindex="0"></label>
+              <label class="maximize" for="computer-maximize" tabindex="0"></label>
+              <label class="close" for="computer" tabindex="0"></label>
+            </div>
+          </nav>
+          <menu class="window-menu underline">
+            <label class="toggle-menu-label" data-toggle="" for="computer-menu"></label>
+            <li>
+              <a class="menu-item-file" data-label="" href="#">File</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <a class="label-nested">
+                    <span><span>Ne</span><span class="line">w</span></span>
+                  </a>
+                  <menu class="sub-menu underline">
+                    <li>
+                      <label class="label-disabled">Folder</label>
+                    </li>
+                    <li>
+                      <label class="label-disabled">Shortcut</label>
+                    </li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li>
+                      <label class="label-disabled no-line">Text Document</label>
+                    </li>
+                  </menu>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Create&nbsp;</span><span class="line">Shortcut</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Delete</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Rena</span><span class="line">me</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Properties</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label for="computer" tabindex="0">Close</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-edit" data-label="" href="#">Edit</a>
+              <menu class="sub-menu underline">
+                <li><label class="label-disabled">Undo</label></li><li><hr></li><li><label class="label-disabled"><span><span>Cu</span><span class="line">t</span></span></label></li><li><label class="label-disabled">Copy</label></li><li><label class="label-disabled">Paste</label></li>
+                <li><label class="label-disabled"><span><span>Paste&nbsp;</span><span class="line">Shortcut</span></span></label></li><li><hr></li><li><label class="label-disabled"><span><span>Select&nbsp;</span><span class="line">All</span></span></label></li><li><label class="label-disabled">Invert Selection</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-view" data-label="" href="#">View</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Toolbar</label>
+                </li>
+                <li>
+                  <label class="label-check label-status-bar" for="computer-menu-status-bar">
+                    <span><span>Status&nbsp;</span><span class="line">Bar</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-large-icons" for="computer-menu-large-icons">
+                    <span><span>Lar</span><span class="line">ge Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-small-icons" for="computer-menu-small-icons">
+                    <span><span>S</span><span class="line">mall Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-list-icons" for="computer-menu-list-icons">
+                    <span class="line">List</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Details</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><a class="label-nested"><span><span>Arrange&nbsp;</span><span class="line">Icons</span></span></a><menu class="sub-menu underline"><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Name</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Type</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;Si</span><span class="line">ze</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Date</span></span></label></li><li><hr></li><li><label class="label-disabled">Auto Arrange</label></li></menu></li><li><label class="label-disabled"><span><span>Lin</span><span class="line">e up Icons</span></span></label></li><li><hr></li><li><label class="label-disabled">Refresh</label></li><li><label class="label-disabled">Options...</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-help" data-label="" href="#">Help</a>
+              <menu class="sub-menu underline"><li><label class="label-disabled">Help Topics</label></li><li><hr></li><li><label class="label-disabled">About Windows 95</label></li></menu>
+            </li>
+          </menu>
+          <div class="window-content">
+            <div class="list-container above-footer">
+              <menu class="list">
+                <li>
+                  <label class="label-folder-small">Dos</label>
+                </li>
+                <li>
+                  <label class="label-folder-small">Program Files</label>
+                </li>
+                <li>
+                  <label class="label-folder-small">Windows</label>
+                </li>
+                <li>
+                  <label class="label-program-config-small">Autoexec</label>
+                </li>
+                <li>
+                  <label class="label-document-windows-small">Autoexec.dos</label>
+                </li>
+                <li>
+                  <label class="label-program-small">Command</label>
+                </li>
+                <li>
+                  <label class="label-document-windows-small">Command.dos</label>
+                </li>
+                <li>
+                  <label class="label-document-windows-small">Config.dos</label>
+                </li>
+                <li>
+                  <label class="label-program-config-small">Dbg</label>
+                </li>
+                <li>
+                  <label class="label-document-text-small">Netlog</label>
+                </li>
+                <li>
+                  <label class="label-program-small">Wdeb386</label>
+                </li>
+              </menu>
+            </div>
+            <footer class="window-footer">
+              <ul class="number">
+                <li class="show">11 object(s) (plus 14 hidden)</li>
+              </ul>
+              <ul class="space">
+                <li class="show">954KB (Disk free space: 31.1MB)</li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="window window-default" data-window="" id="window-notepad" style="z-index: 14;" data-index="14">
+        <input class="toggle-menu" data-menu="" id="notepad-menu" type="checkbox" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav" style="touch-action: none;">
+            <h3 class="label-document-text-small">
+              <span>Untitled - Notepad</span>
+            </h3>
+            <div class="buttons">
+              <label class="minimize" for="notepad-minimize" tabindex="0"></label>
+              <label class="maximize" for="notepad-maximize" tabindex="0"></label>
+              <label class="close" for="notepad" tabindex="0"></label>
+            </div>
+          </nav>
+          <menu class="window-menu underline">
+            <label class="toggle-menu-label" data-toggle="" for="notepad-menu"></label>
+            <li>
+              <a class="menu-item-file" data-label="" href="#">File</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">New</label>
+                </li>
+                <li>
+                  <label class="label-disabled">Open</label>
+                </li>
+                <li>
+                  <label class="label-disabled">Save</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Save&nbsp;</span><span class="line">As</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Page Se</span><span class="line">tup...</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Print</label>
+                </li>
+                <li>
+                  <label for="notepad">
+                    <span><span>E</span><span class="line">xit</span></span>
+                  </label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-edit" data-label="" href="#">Edit</a>
+              <menu class="sub-menu underline">
+                <li><label class="label-disabled">Undo</label></li><li><hr></li><li><label class="label-disabled"><span><span>Cu</span><span class="line">t</span></span></label></li><li><label class="label-disabled">Copy</label></li><li><label class="label-disabled">Paste</label></li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>De</span><span class="line">lete</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Select&nbsp;</span><span class="line">All</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Time/</span><span class="line">Date</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">Word Wrap</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-search" data-label="" href="#">Search</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Find</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Find&nbsp;</span><span class="line">Next</span></span>
+                  </label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-help" data-label="" href="#">Help</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Help Topics</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">About Notepad</label>
+                </li>
+              </menu>
+            </li>
+          </menu>
+          <div class="window-content textarea-container">
+            <textarea></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="window window-default" data-window="" id="window-explorer">
+        <input class="toggle-menu" data-menu="" id="explorer-menu" type="checkbox" hidden="">
+        <input checked="checked" class="menu-status-bar" id="explorer-menu-status-bar" type="checkbox" hidden="">
+        <input class="menu-large-icons" id="explorer-menu-large-icons" name="explorer-icon-size" type="radio" hidden="">
+        <input class="menu-small-icons" id="explorer-menu-small-icons" name="explorer-icon-size" type="radio" hidden="">
+        <input checked="checked" class="menu-list-icons" id="explorer-menu-list-icons" name="explorer-icon-size" type="radio" hidden="">
+        <div class="window-inside">
+          <nav class="window-nav">
+            <h3 class="label-folder-explorer-small">
+              <span>
+                <span class="title-explorer-desktop">Exploring - Desktop</span>
+                <span class="title-explorer-computer">Exploring - Computer</span>
+                <span class="title-explorer-disk">Exploring - Ms-dos_5 (C:)</span>
+                <span class="title-explorer-dos">Exploring - Dos</span>
+                <span class="title-explorer-program-files">Exploring - Program Files</span>
+                <span class="title-explorer-windows">Exploring - Windows</span>
+                <span class="title-explorer-control-panel">Exploring - Control Panel</span>
+                <span class="title-explorer-printers">Exploring - Printers</span>
+                <span class="title-explorer-recycle-bin">Exploring - Recycle Bin</span>
+              </span>
+            </h3>
+            <div class="buttons">
+              <label class="minimize" for="explorer-minimize" tabindex="0"></label>
+              <label class="maximize" for="explorer-maximize" tabindex="0"></label>
+              <label class="close" for="explorer" tabindex="0"></label>
+            </div>
+          </nav>
+          <menu class="window-menu underline">
+            <label class="toggle-menu-label" data-toggle="" for="explorer-menu"></label>
+            <li>
+              <a class="menu-item-file" data-label="" href="#">File</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <a class="label-nested">
+                    <span><span>Ne</span><span class="line">w</span></span>
+                  </a>
+                  <menu class="sub-menu underline">
+                    <li>
+                      <label class="label-disabled">Folder</label>
+                    </li>
+                    <li>
+                      <label class="label-disabled">Shortcut</label>
+                    </li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li>
+                      <label class="label-disabled no-line">Text Document</label>
+                    </li>
+                  </menu>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Create&nbsp;</span><span class="line">Shortcut</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Delete</label>
+                </li>
+                <li>
+                  <label class="label-disabled">
+                    <span><span>Rena</span><span class="line">me</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Properties</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label for="explorer" tabindex="0">Close</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-edit" data-label="" href="#">Edit</a>
+              <menu class="sub-menu underline">
+                <li><label class="label-disabled">Undo</label></li><li><hr></li><li><label class="label-disabled"><span><span>Cu</span><span class="line">t</span></span></label></li><li><label class="label-disabled">Copy</label></li><li><label class="label-disabled">Paste</label></li>
+                <li><label class="label-disabled"><span><span>Paste&nbsp;</span><span class="line">Shortcut</span></span></label></li><li><hr></li><li><label class="label-disabled"><span><span>Select&nbsp;</span><span class="line">All</span></span></label></li><li><label class="label-disabled">Invert Selection</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-view" data-label="" href="#">View</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <label class="label-disabled">Toolbar</label>
+                </li>
+                <li>
+                  <label class="label-check label-status-bar" for="explorer-menu-status-bar">
+                    <span><span>Status&nbsp;</span><span class="line">Bar</span></span>
+                  </label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-large-icons" for="explorer-menu-large-icons">
+                    <span><span>Lar</span><span class="line">ge Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-small-icons" for="explorer-menu-small-icons">
+                    <span><span>S</span><span class="line">mall Icons</span></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-check label-icon-size label-list-icons" for="explorer-menu-list-icons">
+                    <span class="line">List</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-disabled">Details</label>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><a class="label-nested"><span><span>Arrange&nbsp;</span><span class="line">Icons</span></span></a><menu class="sub-menu underline"><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Name</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Type</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;Si</span><span class="line">ze</span></span></label></li><li><label class="label-disabled"><span><span>by&nbsp;</span><span class="line">Date</span></span></label></li><li><hr></li><li><label class="label-disabled">Auto Arrange</label></li></menu></li><li><label class="label-disabled"><span><span>Lin</span><span class="line">e up Icons</span></span></label></li><li><hr></li><li><label class="label-disabled">Refresh</label></li><li><label class="label-disabled">Options...</label></li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-tools" data-label="" href="#">Tools</a>
+              <menu class="sub-menu underline">
+                <li>
+                  <a class="label-nested">Find</a>
+                  <menu class="sub-menu underline">
+                    <li>
+                      <label class="label-disabled">Files or Folders</label>
+                    </li>
+                  </menu>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li>
+                  <label class="label-disabled">Go to...</label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="menu-item-help" data-label="" href="#">Help</a>
+              <menu class="sub-menu underline"><li><label class="label-disabled">Help Topics</label></li><li><hr></li><li><label class="label-disabled">About Windows 95</label></li></menu>
+            </li>
+          </menu>
+          <div class="window-content">
+            <div class="folders above-footer">
+              <h4>All Folders</h4>
+              <div class="list-container">
+                <menu class="list">
+                  <li>
+                    <label class="label-desktop-small" for="explorer-desktop" tabindex="0">
+                      <span>Desktop</span>
+                    </label>
+                    <menu>
+                      <li>
+                        <label class="label-toggle toggle-computer" for="toggle-computer"></label>
+                        <label class="label-computer-small" for="explorer-computer" tabindex="0">
+                          <span>My Computer</span>
+                        </label>
+                        <menu>
+                          <li>
+                            <label class="label-toggle toggle-error-a" for="error-diskette-a"></label>
+                            <label class="label-diskette-small" for="error-diskette-a" tabindex="0">
+                              <span>5¼ Floppy (A:)</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="label-toggle toggle-error-b" for="error-diskette-b"></label>
+                            <label class="label-diskette-small" for="error-diskette-b" tabindex="0">
+                              <span>5¼ Floppy (B:)</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="label-toggle toggle-disk" for="toggle-disk"></label>
+                            <label class="label-disk-small" for="explorer-disk" tabindex="0">
+                              <span>Ms-dos_5 (C:)</span>
+                            </label>
+                            <menu>
+                              <li>
+                                <label class="label-folder-small" for="explorer-dos" tabindex="0">
+                                  <span>Dos</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-toggle toggle-program-files" for="toggle-program-files"></label>
+                                <label class="label-folder-small" for="explorer-program-files" tabindex="0">
+                                  <span>Program Files</span>
+                                </label>
+                                <menu>
+                                  <li>
+                                    <label class="label-folder-small long">Microsoft Exchange</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small long">The Microsoft Network</label>
+                                  </li>
+                                </menu>
+                              </li>
+                              <li>
+                                <label class="label-toggle toggle-windows" for="toggle-windows"></label>
+                                <label class="label-folder-small" for="explorer-windows" tabindex="0">
+                                  <span>Windows</span>
+                                </label>
+                                <menu>
+                                  <li>
+                                    <label class="label-folder-small">Command</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Config</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Cursors</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Fonts</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Help</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Media</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">SendTo</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Start Menu</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">System</label>
+                                  </li>
+                                  <li>
+                                    <label class="label-folder-small">Temp</label>
+                                  </li>
+                                </menu>
+                              </li>
+                            </menu>
+                          </li>
+                          <li>
+                            <label class="label-control-panel-small" for="explorer-control-panel" tabindex="0">
+                              <span>Control Panel</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="label-folder-printers-small" for="explorer-printers" tabindex="0">
+                              <span>Printers</span>
+                            </label>
+                          </li>
+                        </menu>
+                        </li><li>
+                          <label class="label-recycle-bin-small" for="explorer-recycle-bin" tabindex="0">
+                            <span>Recycle Bin</span>
+                          </label>
+                        </li>
+                      </menu></li>
+                    </menu>
+
+
+              </div>
+            </div>
+            <div class="folders-content above-footer">
+              <div class="content content-explorer-desktop">
+                <h5>Contents of Desktop</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-computer-small" for="explorer-computer" tabindex="0">
+                        <span>My Computer</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-inbox-small">
+                        <span>Inbox</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-recycle-bin-small">
+                        <span>Recycle Bin</span>
+                      </label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-computer">
+                <h5>Contents of My Computer</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-diskette-small" for="error-diskette-a" tabindex="0">
+                        <span>5¼ Floppy (A:)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-diskette-small" for="error-diskette-b" tabindex="0">
+                        <span>5¼ Floppy (B:)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-disk-small" for="explorer-disk" tabindex="0">
+                        <span>Ms-dos_5 (C:)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-control-panel-small" for="explorer-control-panel" tabindex="0">
+                        <span>Control Panel</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-folder-printers-small" for="explorer-printers" tabindex="0">
+                        <span>Printers</span>
+                      </label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-disk">
+                <h5>Contents of Ms-dos_5 (C:)</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-folder-small" for="explorer-dos" tabindex="0">
+                        <span>Dos</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small" for="explorer-program-files" tabindex="0">
+                        <span>Program Files</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small" for="explorer-windows" tabindex="0">
+                        <span>Windows</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-program-config-small">Autoexec</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Autoexec.dos</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Command</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Command.dos</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Config.dos</label>
+                    </li>
+                    <li>
+                      <label class="label-program-config-small">Dbg</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Netlog</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Wdeb386</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-dos">
+                <h5>Contents of Dos</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-document-windows-small">4201.cpi</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">4208.cpi</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">5202.cpi</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Append</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Appnotes</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Assign</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Attrib</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Backup</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Chkdsk</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Command</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Comp</label>
+                    </li>
+                    <li>
+                      <label class="label-program-config-small">Dblspace</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Debug</label>
+                    </li>
+                    <li>
+                      <label class="label-program-config-small">Defrag</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Diskcomp</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Diskcopy</label>
+                    </li>
+                    <li>
+                      <label class="label-help-small">Doshelp</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Doskey</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Dosshell</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Dosshell</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Dosshell.grb</label>
+                    </li>
+                    <li>
+                      <label class="label-help-small">Dosshell</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Dosshell</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Dosshell.vid</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Dosswap</label>
+                    </li>
+                    <li>
+                      <label class="label-program-config-small">Drvspace</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Edit</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-program-files">
+                <h5>Contents of Program Files</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-folder-small long">Microsoft Exchange</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small long">The Microsoft Network</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-windows">
+                <h5>Contents of Windows</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-folder-small">Command</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Config</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Cursors</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Fonts</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Help</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Media</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">SendTo</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Start Menu</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">System</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-small">Temp</label>
+                    </li>
+                    <li>
+                      <label class="label-document-misc-small">Accessor</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Black Thatch</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Blue Rivets</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Bubbles</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Carved Stone</label>
+                    </li>
+                    <li>
+                      <label class="label-document-windows-small">Circles</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Command</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Config</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Control</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Control</label>
+                    </li>
+                    <li>
+                      <label class="label-document-misc-small">Desktop</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Display</label>
+                    </li>
+                    <li>
+                      <label class="label-document-misc-small">Document</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Dosprmpt</label>
+                    </li>
+                    <li>
+                      <label class="label-program-small">Emm386</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Exchange</label>
+                    </li>
+                    <li>
+                      <label class="label-document-misc-small">Exchng32</label>
+                    </li>
+                    <li>
+                      <label class="label-computer-small">Explorer</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Extra</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">Faq</label>
+                    </li>
+                    <li>
+                      <label class="label-document-font-small">Fontview</label>
+                    </li>
+                    <li>
+                      <label class="label-document-text-small">General</label>
+                    </li>
+                    <li>
+                      <label class="label-grpconv-small">Grpconv</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-control-panel">
+                <h5>Contents of Control Panel</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-hardware-small">Add New Hardware</label>
+                    </li>
+                    <li>
+                      <label class="label-add-programs-small">Add/Remove Programs</label>
+                    </li>
+                    <li>
+                      <label class="label-date-time-small">Date/Time</label>
+                    </li>
+                    <li>
+                      <label class="label-computer-display-small">Display</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-fonts-link-small">Fonts</label>
+                    </li>
+                    <li>
+                      <label class="label-internet-small">Internet</label>
+                    </li>
+                    <li>
+                      <label class="label-joystick-small">Joystick</label>
+                    </li>
+                    <li>
+                      <label class="label-keyboard-small">Keyboard</label>
+                    </li>
+                    <li>
+                      <label class="label-inbox-small">Mail</label>
+                    </li>
+                    <li>
+                      <label class="label-modems-small">Modems</label>
+                    </li>
+                    <li>
+                      <label class="label-mouse-small">Mouse</label>
+                    </li>
+                    <li>
+                      <label class="label-multimedia-small">Multimedia</label>
+                    </li>
+                    <li>
+                      <label class="label-network-small">Network</label>
+                    </li>
+                    <li>
+                      <label class="label-passwords-small">Passwords</label>
+                    </li>
+                    <li>
+                      <label class="label-battery-small">Power</label>
+                    </li>
+                    <li>
+                      <label class="label-folder-printers-link-small" for="explorer-printers" tabindex="0">
+                        <span>Printers</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-regional-small">Regional Settings</label>
+                    </li>
+                    <li>
+                      <label class="label-computer-sounds-small">Sounds</label>
+                    </li>
+                    <li>
+                      <label class="label-computer-mouse-small">System</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-printers">
+                <h5>Contents of Printers</h5>
+                <div class="list-container">
+                  <menu class="list">
+                    <li>
+                      <label class="label-document-printer-small">Add Printer</label>
+                    </li>
+                  </menu>
+                </div>
+              </div>
+              <div class="content content-explorer-recycle-bin">
+                <h5>Contents of Recycle Bin</h5>
+                <div class="list-container">
+                  <menu class="list"></menu>
+                </div>
+              </div>
+            </div>
+            <footer class="window-footer">
+              <ul class="number">
+                <li class="explorer-number-desktop">3 object(s)</li>
+                <li class="explorer-number-computer">0 object(s)</li>
+                <li class="explorer-number-disk">11 object(s) (plus 14 hidden)</li>
+                <li class="explorer-number-dos">27 object(s) (plus 57 hidden)</li>
+                <li class="explorer-number-program-files">2 object(s)</li>
+                <li class="explorer-number-windows">33 object(s) (plus 77 hidden)</li>
+                <li class="explorer-number-control-panel">15 object(s)</li>
+                <li class="explorer-number-printers">1 object(s)</li>
+                <li class="explorer-number-recycle-bin">0 object(s)</li>
+              </ul>
+              <ul class="space">
+                <li class="explorer-space-disk">954KB (Disk free space: 31.1MB)</li>
+                <li class="explorer-space-dos">2.09MB (Disk free space: 31.1MB)</li>
+                <li class="explorer-space-program-files">0 bytes (Disk free space: 31.1MB)</li>
+                <li class="explorer-space-windows">8.09MB (Disk free space: 31.1MB)</li>
+                <li class="explorer-space-recycle-bin">0 bytes</li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="start-menu-outline" id="start-menu-outline"></div>
+  <nav class="start-menu" id="start-menu">
+    <label class="label-start" for="start" tabindex="0">شروع</label>
+    <div class="menu-container">
+      <menu class="menu main-menu underline">
+        <li>
+          <a class="label-folder-programs label-nested">
+            <span>Programs</span>
+          </a>
+          <menu class="menu sub-menu">
+            <li>
+              <a class="label-folder-programs-small label-nested">
+                <span>Accessories</span>
+              </a>
+              <menu class="menu sub-menu">
+                <li>
+                  <label class="label-notepad-small" for="notepad">
+                    <span>Notepad</span>
+                  </label>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <a class="label-folder-programs-small label-nested">
+                <span>Start Up</span>
+              </a>
+              <menu class="menu sub-menu">
+                <li>
+                  <a class="label-empty">
+                    <span>(Empty)</span>
+                  </a>
+                </li>
+              </menu>
+            </li>
+            <li>
+              <label class="label-folder-explorer-small" for="explorer">
+                <span>Windows Explorer</span>
+              </label>
+            </li>
+          </menu>
+        </li>
+        <li>
+          <a class="label-folder-documents label-nested">
+            <span>Documents</span>
+          </a>
+          <menu class="menu sub-menu">
+            <li>
+              <a class="label-empty">
+                <span>(Empty)</span>
+              </a>
+            </li>
+          </menu>
+        </li>
+        <li>
+          <a class="label-settings label-nested">
+            <span>Settings</span>
+          </a>
+          <menu class="menu sub-menu underline">
+            <li>
+              <label class="label-control-panel-small" for="control-panel">
+                <span>Control Panel</span>
+              </label>
+            </li>
+            <li>
+              <label class="label-folder-printers-small" for="printers">
+                <span>Printers</span>
+              </label>
+            </li>
+            <li>
+              <label class="label-taskbar" for="taskbar">
+                <span>Taskbar...</span>
+              </label>
+            </li>
+          </menu>
+        </li>
+        <li>
+          <a class="label-find label-nested">
+            <span>Find</span>
+          </a>
+          <menu class="menu sub-menu underline">
+            <li>
+              <label class="label-find-small label-disabled">
+                <span>Files or Folders</span>
+              </label>
+            </li>
+          </menu>
+        </li>
+        <li>
+          <label class="label-help">
+            <span>Help</span>
+          </label>
+        </li>
+        <li>
+          <label class="label-run">
+            <span>Run...</span>
+          </label>
+        </li>
+        <li>
+          <label class="label-shut-down" for="error-blue-screen">
+            <span><span>Sh</span><span class="line">u</span><span>t Down</span></span>
+          </label>
+        </li>
+      </menu>
+    </div>
+    <menu class="tabs">
+      <li class="tab tab-printers" data-tab="">
+        <span class="activate"></span>
+        <label class="label-folder-printers-small" for="printers-minimize">
+          <span>Printers</span>
+        </label>
+      </li>
+      <li class="tab tab-control-panel" data-tab="">
+        <span class="activate"></span>
+        <label class="label-control-panel-small" for="control-panel-minimize">
+          <span>Control Panel</span>
+        </label>
+      </li>
+      <li class="tab tab-computer" data-tab="" style="order: 3;">
+        <span class="activate"></span>
+        <label class="label-disk-small" for="computer-minimize">
+          <span>Ms-dos_5 (C:)</span>
+        </label>
+      </li>
+      <li class="tab tab-notepad" data-tab="" style="order: 4;">
+        <span class="activate"></span>
+        <label class="label-document-text-small" for="notepad-minimize">
+          <span>Untitled - Notepad</span>
+        </label>
+      </li>
+      <li class="tab tab-explorer" data-tab="">
+        <span class="activate"></span>
+        <label class="label-folder-explorer-small" for="explorer-minimize">
+          <span>Exploring - Ms-dos_5 (C:)</span>
+        </label>
+      </li>
+    </menu>
+    <div class="time">
+      <time class="clock">11:52 بعدازظهر</time>
+    </div>
+  </nav>
+  <div id="alerts">
+    <div id="alert-blue-screen">
+      <div class="content">
+        <h3>
+          <span>Windows</span>
+        </h3>
+        <p>An error has occured. To continue:</p>
+        <p>Press Enter to return to Windows, or</p>
+        <p>Press CTRL to restart your computer. If you do this, you will lose any unsaved information in all open applications.</p>
+        <p>Error: GABRIELLEWEE1</p>
+        <p>
+          Press any key to continue
+          <span class="blink">_</span>
+        </p>
+      </div>
+    </div>
+    <div class="alert" data-window="" id="alert-diskette-a">
+      <div class="alert-inside">
+        <div class="alert-nav">
+          <h3>
+            <span>Exploring - 5¼ Floppy (A:)</span>
+          </h3>
+          <div class="buttons">
+            <label class="close" for="error-diskette-a"></label>
+          </div>
+        </div>
+        <div class="alert-content">
+          <p>A:\ is not accessible.</p>
+          <p>The device is not ready.</p>
+        </div>
+        <footer class="alert-footer">
+          <button class="button underline" data-retry="" tabindex="0">
+            <span>Retry</span>
+          </button>
+          <label class="button" for="error-diskette-a" tabindex="0">
+            <span>Cancel</span>
+          </label>
+        </footer>
+      </div>
+    </div>
+    <div class="alert" data-window="" id="alert-diskette-b">
+      <div class="alert-inside">
+        <div class="alert-nav">
+          <h3>
+            <span>Exploring - 5¼ Floppy (B:)</span>
+          </h3>
+          <div class="buttons">
+            <label class="close" for="error-diskette-b"></label>
+          </div>
+        </div>
+        <div class="alert-content">
+          <p>B:\ is not accessible.</p>
+          <p>The device is not ready.</p>
+        </div>
+        <footer class="alert-footer">
+          <button class="button underline" data-retry="" tabindex="0">
+            <span>Retry</span>
+          </button>
+          <label class="button" for="error-diskette-b" tabindex="0">
+            <span>Cancel</span>
+          </label>
+        </footer>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="CodePen%20-%20Windows%2095_files/draggabilly.pkgd.min.js"></script>
+<script src="CodePen%20-%20Windows%2095_files/luxon.min.js"></script>
+      <script id="rendered-js" src="js/2.js"></script>
+</body>
+</html>
