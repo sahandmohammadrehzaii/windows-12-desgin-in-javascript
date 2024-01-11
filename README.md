@@ -11,7 +11,7 @@
 
 #
 
-`hello people the this project made `
+`hello people the this project made by `
 
 #
 
